@@ -1,10 +1,7 @@
 package com.huang.pojo;
 /**
- * 
- *@author	黄远志
+ *
  *@date		2019年6月22日下午11:01:49
- *@GitHub	https://github.com/huangyuanzhi1997
- *@Blog		https://www.huangyuanzhi.top
  */
 public class UserOA {
 	private int Id;

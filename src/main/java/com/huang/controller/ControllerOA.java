@@ -21,11 +21,8 @@ import com.huang.pojo.PagerMySQL;
 import com.huang.pojo.UserOA;
 
 /**
- * 
- *@author	黄远志
+ *
  *@date		2019年6月22日下午11:01:13
- *@GitHub	https://github.com/huangyuanzhi1997
- *@Blog		https://www.huangyuanzhi.top
  */
 
 @Controller
@@ -35,8 +32,10 @@ public class ControllerOA {
 	public void setBiz(OAUserdaoBiz oaUserdaoBiz) {
 		this.oaUserdaoBiz = oaUserdaoBiz;
 	}
-
+	
+	
 	/*========================================Login信息==============================================*/
+	
 	
 	//登录
 	@RequestMapping("/logindo")
@@ -59,8 +58,10 @@ public class ControllerOA {
 		return modelAndView;		
 	}
 	
+	
 	/*========================================Student信息==============================================*/
-
+	
+	
 	//Student信息查询
 	@RequestMapping("StudentOAselect")
 	public String getSelectMess(String text1,String text2,Model model,
@@ -133,8 +134,10 @@ public class ControllerOA {
 	return "/StudentOAselect";  	
     }
     
+    
 	/*========================================Score信息==============================================*/
-
+	
+    
 	//Score信息查询
 	@RequestMapping("ScoreOAselect")
 	public String ScoreSelect(String text5,String text6,Model model,
@@ -190,11 +193,11 @@ public class ControllerOA {
 
 	 //修改Score
    @RequestMapping("Scoreupdate")
-   public String Scoreupdate(Model model,Integer id,int num,String name,String course,String teacher,String score,String time){
+   public String Scoreupdate(Model model,Integer id,int sid,String sname,String course,String teacher,String score,String time){   		
    OAScore bizz=new OAScore();
    bizz.setId(id);
-   bizz.setNum(num);
-   bizz.setName(name);
+   bizz.setSid(sid);
+   bizz.setSname(sname);
    bizz.setCourse(course);
    bizz.setTeacher(teacher);
    bizz.setScore(score);
@@ -206,8 +209,10 @@ public class ControllerOA {
 	} 	
 	return "/ScoreOAselect";  	
    }
+	
     
 	/*========================================Class信息==============================================*/
+    
     
    //Class班级查询
   	@RequestMapping("ClassOAselect")
@@ -276,9 +281,11 @@ public class ControllerOA {
   	} 	
   	return "/ClassOAselect";  	
       }
-
+    
+    
 	/*========================================Password信息==============================================*/
-
+    
+    
     //修改密码
     @RequestMapping("OAUserupdates")
       public String Classupdate(Model model,int id,String password){   		

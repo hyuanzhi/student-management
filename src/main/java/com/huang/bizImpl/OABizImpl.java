@@ -8,11 +8,8 @@ import com.huang.pojo.OAScore;
 import com.huang.pojo.OAStudent;
 import com.huang.pojo.UserOA;
 /**
- * 
- *@author	黄远志
+ *
  *@date		2019年6月22日下午11:00:59
- *@GitHub	https://github.com/huangyuanzhi1997
- *@Blog		https://www.huangyuanzhi.top
  */
 public class OABizImpl implements OAUserdaoBiz {
 	private OAUserdao oaUserdao;
@@ -84,6 +81,9 @@ public class OABizImpl implements OAUserdaoBiz {
 	public int UserOAs(UserOA id) {
 		return this.oaUserdao.UserOAs(id);
 	}
+	
+	
+	
 	
 	//查询
 	@Override

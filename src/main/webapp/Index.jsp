@@ -34,11 +34,8 @@
 							<td width="191" height="500" align="left" valign="top"
 								background="Images/leftbg.jpg"><%@ include file="Left.jsp"%>
 							</td>
-							<!-- bgcolor="#F6F9FE"> -->
-							<!-- background="Images/xiaojiejie.jpg">&nbsp; -->
-							<!-- background="Images/guangxian.png">&nbsp; -->
 							<td width="709" align="center" valign="top"
-								background="Images/guangxian.png">&nbsp;
+								background="Images/background.jpg">&nbsp;
 								<h1>欢迎使用学生管理系统</h1> 
 								
 								<!-- 
